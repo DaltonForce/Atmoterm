@@ -1,0 +1,7 @@
+<div class="menu">
+    <ul>
+        <li *ngFor="let menuItem of menuItems" [class.selected]="menuItem === activeMenuItem" (click)="selectMenuItem(menuItem)">
+            <img src="../../assets/handsShakes.png" />{{ menuItem }}
+        </li>
+    </ul>
+</div>

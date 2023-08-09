@@ -1,0 +1,22 @@
+<div class="card" [style.background-color]="data.bgcolor" [style.color]="data.textcolor">
+    <div class="wrapper" routerLink="/moreInfo">
+        <img [src]="'../../assets/img/' + data.image" (load)="applyFilterIfNeeded()" />
+        <div class="text">{{ data.text }}</div>
+        <div class="link" [appDarkerColor]="data.bgcolor" [style.color]="data.textcolor">
+            <a routerLink="/moreInfo" style="opacity: 0.8;">Dowiedz się więcej <i class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+<!-- 
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <defs>
+        <filter id="colorizeFilter">
+            <feFlood result="flood" flood-color="var(--text-color)" />
+            <feComposite in2="flood" operator="in" />
+            <feComposite in2="SourceAlpha" operator="in" />
+            <feMerge>
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+</svg> -->

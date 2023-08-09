@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="wrapper">
+        <div class="top">
+            <div class="headerText">{{userName}}, zamów pełną wersję e-usługi {{name}}</div>
+            <div class="close-button" (click)="closeModal()"><span class="bi bi-x" style="font-weight: bold;"></span></div>
+        </div>
+
+        <div class="listOfBenefits">
+            <ul>
+                <li><i class="bi bi-check-circle" style="color: green;"></i> Nasz konsultant uzgodni z Tobą szczegóły zamówienia.</li>
+                <li><i class="bi bi-check-circle" style="color: green;"></i> E-usługa dostosowana do Twoich potrzeb.</li>
+            </ul>
+        </div>
+        <div class="contactMode">
+            Sposób kontaktu
+            
+            <div class="radioButtons">
+                <label class="radio-container">
+                    <input type="radio" name="contact" checked>
+                    <span class="radio-checkmark"></span><b>Telefonicznie</b>
+                </label>
+                
+                <label class="radio-container">
+                    <input type="radio" name="contact">
+                    <span class="radio-checkmark"></span><b>E-mail</b>
+                </label>
+            </div>
+        </div>
+        
+        <div class="inputs">
+
+              <label for="mobile"><b>Telefon komórkowy</b></label>
+              <input type="text" [(ngModel)]="mobileNumber" (input)="formatInputMobile(mobileNumber)" maxlength="11">
+                     
+                     
+              <label for="landline"><b>Telefon stacjonarny</b></label>
+              <input type="text" [(ngModel)]="landlineNumber" (input)="formatInputLandline(landlineNumber)" maxlength="12">
+                     
+              <label for="internal"><b>Numer wewnętrzny</b></label>
+              <input type="text" [(ngModel)]="internalNumber" (input)="formatInputInternal(internalNumber)" maxlength="11">
+
+
+        </div>          
+        <div class="buttons">
+            <div class="cancel" (click)="closeModal()">Anuluj</div>
+            <div class="submit">Zamów</div>
+        </div>
+    </div>
+</div>

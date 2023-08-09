@@ -1,0 +1,32 @@
+.container{
+    min-height: 100%;
+    position: relative;
+}
+
+a{
+    color: black;
+}
+
+.inner {
+    height: 112px;
+    background-color: rgba(210, 214, 222, 1);;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+.copyright{
+    height: 56px;
+    background-color: rgba(179, 182, 189, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-text{
+    width: 33%;
+
+    ul{
+        list-style: none;
+    }
+}

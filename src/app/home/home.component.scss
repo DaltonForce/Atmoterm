@@ -1,0 +1,85 @@
+
+.wrapper{
+    background-color: rgba(244, 246, 249);
+    height: 100%;
+}
+
+.container{
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.header{
+    padding: 4px 0 30px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.servicesListContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 10px 30px 10px;
+}
+
+.squareNumber {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(108, 117, 125);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+.servicesList {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.servicesList.active {
+    border-bottom: 1px solid #000;
+}
+
+.offerText {
+    margin-right: 10px;
+    color: rgb(108, 117, 125);
+    font-size: 14px;
+}
+
+
+.sectionText{
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+.firstDiv{
+    padding-bottom: 30px;
+}
+
+.headerText{
+    font-size: 28px;
+    padding-bottom: 20px;
+
+}
+
+.card {
+    width: 342px;
+    height: 134px;
+    border-radius: 4px;
+
+    .link {
+        color: var(--text-color);
+        height: 24px;
+    }
+}
+

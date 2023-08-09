@@ -1,0 +1,30 @@
+[
+    {
+        "category": 1,
+        "image": "prognoza.png",
+        "text": "Dynamiczna Mapa Jakości Powietrza",
+        "bgcolor": "#00aaba",
+        "textcolor": "#000"
+    },
+    {
+        "category": 1,
+        "image": "analizy.png",
+        "text": "Analizy i Alerty",
+        "bgcolor": "#ec901b",
+        "textcolor": "#000"
+    },
+    {
+        "category": 2,
+        "image": "ekoplatnik.png",
+        "text": "Ekopłatnik",
+        "bgcolor": "#464655",
+        "textcolor": "#fff"
+    },
+    {
+        "category": 2,
+        "image": "energia.png",
+        "text": "Zarządzanie Kosztami Energii i Wody",
+        "bgcolor": "#464655",
+        "textcolor": "#fff"
+    }
+]

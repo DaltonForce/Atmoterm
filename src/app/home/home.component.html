@@ -1,0 +1,34 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="content">
+            <div class="header">E-usługi</div>
+        </div>
+        <div class="servicesListContainer">
+            <div *ngFor="let offer of matchingOffers" 
+                 class="servicesList" 
+                 [ngClass]="{ 'active': selectedOffer === offer.text }"
+                 (click)="selectOffer(offer.text)">
+                <div class="offerText">{{ offer.text }}</div>
+                <div class="squareNumber">{{ offer.count }}</div>
+            </div>
+        </div>
+        <div class="firstDiv" *ngIf="jsonData.length > 0">
+            <div class="sectionText" *ngIf="jsonData.length > 0">{{ getSectionText(1) }}</div>
+            <div class="content">
+                <app-card
+                    *ngFor="let item of jsonData | filterByCategory: 1"
+                    [data]="item"
+                ></app-card>
+            </div>           
+        </div>
+        <div class="secondDiv" *ngIf="jsonData.length > 0">
+            <div class="sectionText">{{ getSectionText(2) }}</div>
+            <div class="content">
+                <app-card
+                    *ngFor="let item of jsonData | filterByCategory: 2"
+                    [data]="item"
+                ></app-card>
+            </div>
+        </div>
+    </div>
+</div>

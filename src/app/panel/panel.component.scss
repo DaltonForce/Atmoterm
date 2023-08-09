@@ -1,0 +1,36 @@
+.menu {
+    width: 250px;
+    height: 100%;
+    background-color: #464655;
+    margin: 0;
+    padding: 0;
+    
+    ul {
+        margin: 0;
+        padding: 8px 0 0 0;
+        list-style: none;
+
+        li {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            cursor: pointer;
+            color: rgba(194, 199, 190, 1);
+            transition: background-color 0.3s;
+            
+            &:hover {
+                background-color: rgba(112, 112, 137, 0.8);
+            }
+            
+            &.selected {
+                background-color: rgba(92, 92, 112, 1);
+                border-left: 4px solid white;
+            }
+        }
+
+        img {
+            margin: 0 10px 0;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.thisThingHaveDefeatedMe{
+    width: 250px;
+    height: 168px;
+    background-color: #464655;
+    position: absolute;
+    bottom: 0;
+    z-index: 6767;
+}
+
+.home-container {
+    flex: 1 1 auto;
+    overflow: auto;
+    //padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.app-panel {
+    flex: 0 0 250px;
+    background-color: #464655;
+    overflow: auto;
+    z-index: 3;
+    position: absolute;
+}
+
+.app-footer {
+    text-align: center;
+    padding: 10px;
+    z-index: 2;
+    overflow: auto;
+}

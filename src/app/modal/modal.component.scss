@@ -1,0 +1,119 @@
+.container{
+    width: 460px;
+    //height: 600px;
+    background-color: #fff;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 5%);
+    z-index: 10000;
+    border-radius: 4px;
+}
+
+.wrapper{
+    padding: 20px;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerText{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.close-button{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+  .bi.bi-x {
+    font-size: 1.6em;
+    transition: font-size 0.3s;
+  }
+
+  .bi.bi-x:hover {
+    color: red;
+  }
+
+  .listOfBenefits ul{
+    list-style: none;
+    padding-left: 0;
+  }
+
+.contactMode {
+    display: flex;
+    //justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.contactLabel{
+    margin-right: 20px;
+}
+
+.radioButtons{
+    margin-left: 30px;
+    display: flex;
+    gap: 5px;
+}
+
+.radio-container{
+    display: flex;
+    align-items: flex-start;
+    //top: -2px;
+}
+
+.inputs{
+    padding-top: 40px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    line-height: 1.1;
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    line-height: 1.1;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cancel,
+.submit {
+    flex-basis: calc(50% - 10px);
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cancel {
+    background-color: rgb(220, 53, 69);
+    color: white;
+    margin-right: 15px;
+}
+
+.submit {
+    background-color: rgb(30, 123, 52);
+    color: white;
+}

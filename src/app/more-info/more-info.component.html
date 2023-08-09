@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="leftContent">
+        <a routerLink="/"><span class="bi bi-arrow-left" style="font-weight: bold;"></span> Wróc do oferty</a>
+        <img src="../../assets/img/Prognozowanie.png"/>
+    </div>
+    <div class="rightContent">
+        <div class="headerInfo">
+            Jakość powietrza - Diagnoza, prognoza
+        </div>
+
+        <div class="name">{{name}}</div>
+
+        <div class="tags">
+            <a href="https://google.com">#modelowanie</a>
+            <a href="https://google.com">#niska emisja</a>
+            <a href="https://google.com">#jakość powietrza</a>
+        </div>
+
+        <div class="description">
+            E-usługa <b>{{name}}</b> wspiera prowadzenie właściwej polityki informacyjnej oraz podejmowanie odpowiednich decyzji, poprzez pokazanie stanu jakości powietrza w dowolnie wybranym miejscu, w czasie rzeczywistym i w niedalekiej przyszłości.
+
+            <div class="tools">
+                Narzędzie umożliwia:
+
+                <ul>
+                    <li>identyfikację źródeł odpowiedzialnych za złą jakość powietrza i określenie ich wpływu na steżenie poszczególnych substancji na danym terenie;</li>
+                    <li>raportowanie aktualnej i prognozowanej jakości powietrza dla dzielnic, szkół, przedszkoli itp. oraz planowanie aktywności na zewnątrz;</li>
+                    <li>prowadzenie właściwej polityki informacyjnej;</li>
+                    <li>podniesienie świadomości ekologicznej mieszkańców.</li>
+                </ul>
+
+                <div class="order" (click)="openModal = true">Zamów pełną wersję</div>
+
+                
+                <div *ngIf="openModal" class="overlay">
+                    <app-modal (close)="openModal = false"></app-modal>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
